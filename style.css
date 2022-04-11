@@ -1,0 +1,161 @@
+body{
+  background-color: #b3d4fc;
+  font-family: Arial, serif;
+}
+
+
+.header_inner{
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo{
+  font-size: 28px;
+}
+.logo_img{
+  padding-right: 1069px;
+
+}
+
+
+.top{
+  color: white;
+  text-decoration: none;
+  transition: color .2s ;
+  font-size: 25px;
+  border: 3px white solid;
+
+
+}
+
+.top:hover{
+  color: red;
+
+
+}
+
+.main_img{
+  float: right;
+
+
+}
+
+.main_intro{
+  font-size: 80px;
+  text-align: center;
+  padding-top: 110px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.btn{
+  font-size: 30px;
+  color: red;
+  text-decoration: none;
+}
+
+
+.main_btn{
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.bottom{
+  display: inline-block;
+  font-size: 40px;
+  width: 100%;
+}
+
+.educ_text{
+
+  text-align: center;
+}
+
+.improve_text{
+
+  text-align: center;
+
+}
+
+.time_text{
+  text-align: center;
+}
+
+@media screen and (max-width: 1479px) {
+
+  .top_links{
+    padding-right: 40px;
+    display: flex;
+    padding-bottom: 30px;
+  }
+
+}
+@media screen and (max-width: 1320px) {
+
+
+  .main_img {
+    width: 40%;
+    height: 60%;
+
+  }
+
+}
+@media screen and (max-width: 1100px) {
+ .main_intro{
+   width: 60%;
+
+ }
+  .time_text{
+    font-size: 80px;
+    padding-top: 50px;
+  }
+  .educ_text{
+    font-size: 80px;
+     padding-top: 120px;
+  }
+  .improve_text{
+    font-size: 80px;
+     padding-top: 50px;
+  }
+  .btn{
+    font-size: 50px;
+  }
+  .main_img{
+   flex-direction: row;
+    padding-top: 120px;
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+  .main_img{
+    padding-right: 110px;
+  }
+  .main_intro{
+     padding-left: 370px;
+  }
+.bottom{
+ justify-content: space-between;
+  display: inline-block;
+  font-size: 40px;
+
+  width: 100%;
+  padding-left: 200px;
+}
+}
+
+@media screen and (max-width: 740px) {
+
+
+ .improve_text{
+
+   padding-left: 500px;
+ }
+ .bottom{
+
+ }
+
+}
+
+
