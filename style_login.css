@@ -1,5 +1,7 @@
 
 
+
+
 .form{
   padding: 15px;
   margin-left: 450px;
@@ -42,7 +44,6 @@
 .top_home{
   color: white;
   text-decoration: none;
-  /*transition: color .2s linear;*/
   font-size: 25px;
   border: 3px solid white;
   padding: 10px 5px;
@@ -121,5 +122,4 @@ body{
     margin-left: 70px;
   }
 }
-
 
