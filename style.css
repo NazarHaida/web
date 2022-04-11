@@ -79,15 +79,7 @@ body{
   text-align: center;
 }
 
-@media screen and (max-width: 1479px) {
 
-  .top_links{
-    /*padding-right: 40px;*/
-    /*display: flex;*/
-    /*padding-bottom: 30px;*/
-  }
-
-}
 @media screen and (max-width: 1320px) {
 
 
