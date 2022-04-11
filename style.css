@@ -14,6 +14,7 @@ body{
 }
 
 
+
 .top{
   color: white;
   text-decoration: none;
@@ -81,9 +82,9 @@ body{
 @media screen and (max-width: 1479px) {
 
   .top_links{
-    padding-right: 40px;
-    display: flex;
-    padding-bottom: 30px;
+    /*padding-right: 40px;*/
+    /*display: flex;*/
+    /*padding-bottom: 30px;*/
   }
 
 }
@@ -126,10 +127,10 @@ body{
 
 @media screen and (max-width: 980px) {
   .main_img{
-    padding-right: 110px;
+    padding-right: 230px;
   }
   .main_intro{
-     padding-left: 370px;
+     padding-left: 250px;
   }
 .bottom{
  justify-content: space-between;
@@ -137,7 +138,7 @@ body{
   font-size: 40px;
 
   width: 100%;
-  padding-left: 200px;
+  padding-left: 50px;
 }
 }
 

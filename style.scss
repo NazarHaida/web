@@ -1,11 +1,11 @@
+$color_1: white;
+$color_2: red;
+$font-family_1: Arial, serif;
+$background-color_1: #b3d4fc;
+
 body {
-	background-color: #b3d4fc;
-	font-family: Arial, serif;
-}
-.header_info {
-	top: 0;
-	left: 0;
-	right: 0;
+	background-color: $background-color_1;
+	font-family: $font-family_1;
 }
 .header_inner {
 	justify-content: space-between;
@@ -14,65 +14,96 @@ body {
 .logo {
 	font-size: 28px;
 }
-.logo_img {
-	padding-top: 9px;
-}
-.top_links {
-	padding-top: 5px;
-	padding-right: 10px;
-}
 .top {
-	color: white;
+	color: $color_1;
 	text-decoration: none;
-	transition: color .2s linear;
+	transition: color .2s;
 	font-size: 25px;
-	border: 3px solid white;
-	padding: 5px 10px;
+	border: 3px white solid;
 	&:hover {
-		color: red;
-		display: inline-block;
-		vertical-align: top;
-		margin: 0 15px;
+		color: $color_2;
 	}
 }
 .main_img {
-	padding-right: 100px;
+	float: right;
 }
 .main_intro {
 	font-size: 80px;
 	text-align: center;
-	padding: 70px 10px;
+	padding-top: 110px;
 	text-transform: uppercase;
+	width: 100%;
 }
 .btn {
 	font-size: 30px;
-	color: white;
+	color: $color_2;
 	text-decoration: none;
-	text-align: center;
-	padding-left: 140px;
-	&:hover {
-		color: black;
-		display: inline-block;
-	}
 }
 .main_btn {
-	padding-left: 270px;
-	background-color: red;
-}
-.bottom {
-	justify-content: space-between;
-	display: inline-block;
-	font-size: 40px;
+	text-align: center;
 	padding-top: 20px;
 }
-.educ_text {
-	padding-left: 40px;
+.bottom {
+	display: inline-block;
+	font-size: 40px;
+	width: 100%;
 }
-.educ_img {
+.educ_text {
+	text-align: center;
 }
 .improve_text {
-	padding-left: 80px;
+	text-align: center;
 }
 .time_text {
-	padding-left: 140px;
+	text-align: center;
+}
+@media screen and (max-width: 1320px) {
+	.main_img {
+		width: 40%;
+		height: 60%;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.main_intro {
+		width: 60%;
+	}
+	.time_text {
+		font-size: 80px;
+		padding-top: 50px;
+	}
+	.educ_text {
+		font-size: 80px;
+		padding-top: 120px;
+	}
+	.improve_text {
+		font-size: 80px;
+		padding-top: 50px;
+	}
+	.btn {
+		font-size: 50px;
+	}
+	.main_img {
+		flex-direction: row;
+		padding-top: 120px;
+	}
+}
+@media screen and (max-width: 980px) {
+	.main_img {
+		padding-right: 230px;
+	}
+	.main_intro {
+		padding-left: 250px;
+	}
+	.bottom {
+		justify-content: space-between;
+		display: inline-block;
+		font-size: 40px;
+		width: 100%;
+		padding-left: 50px;
+	}
+}
+@media screen and (max-width: 740px) {
+	.improve_text {
+		padding-left: 500px;
+	}
 }
