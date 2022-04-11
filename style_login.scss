@@ -76,16 +76,17 @@ body {
 }
 @media screen and (max-width: 990px) {
 	.form {
-		margin-right: 400px;
-		margin-left: 170px;
+		margin-left: 150px;
 		width: 500px;
 		height: 750px;
+		padding: 100px;
 	}
 	.input {
-		width: 50%;
-		height: 30px;
+		width: 70%;
+		height: 60px;
 		text-align: center;
-		margin-left: 130px;
+		margin-top: 10px;
+		margin-left: 80px;
 	}
 	.register_text {
 		font-size: 50px;
@@ -99,11 +100,10 @@ body {
 	}
 	.btn_2 {
 		font-size: 25px;
-		width: 50%;
-		margin-left: 135px;
+		width: 70%;
+		margin-left: 85px;
 	}
 	.register_link {
 		margin-left: 70px;
 	}
 }
-
