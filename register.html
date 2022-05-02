@@ -6,44 +6,52 @@
   <link rel="stylesheet" href="style_login.css">
 </head>
 <body>
-<script src="register.js"></script>
+
 
  <div class="register_top">
     <div class="logo"><b>NoteSE</b></div>
 
 
-  <a class ="top_home"href="https://nazarhaida.github.io/web/index.html">Home</a>
+  <a class ="top_home"href="index.html">Home</a>
  </div>
  <div class="main_form">
 
-  <form action ="/"class="form" method="post" id="form">
- <ul class="errors">
+  <form class="form" action="/" method="post" id="form">
 
- </ul>
+
+
     <h1 class="register_text"><b>Register</b></h1>
-      <a class="login_link" href="https://nazarhaida.github.io/web/"> <b>Login</b></a>
+      <a class="login_link" href="login.html"> <b>Login</b></a>
       <div class="form_inner">
-        <label>
-         <input placeholder="First Name" class = "input" type="text" id="fname" name="fname"><br><br>
+         <label>
+         <input placeholder="Nickname" class = "input" type="text" id="nickname" name="nickname" required>
         </label>
         <label>
-         <input placeholder="Last Name" class = "input" type="text" id="lname" name="lname"><br><br>
+         <input placeholder="First Name" class = "input" type="text" id="firstname" name="firstname" required>
+        </label>
+        <label>
+         <input placeholder="Last Name" class = "input" type="text" id="lastname" name="lastname" required>
         </label>
         <label >
-         <input placeholder="Email" class = "input" type="email" id="email" name="email"><br><br>
+         <input placeholder="Email" class = "input" type="email" id="email" name="email" required>
         </label>
         <label>
-         <input placeholder="Password" class="input" type="password" name = "password" id ="password" >
+         <input placeholder="Password" class="input" type="password" name = "password" id ="password"  required minlength="8">
         </label>
         <label>
-         <input placeholder="Repeat Password" class="input" name = "password" type="password" id ="rep_password" >
+         <input placeholder="Repeat Password" class="input" name = "rep_password" type="password" id ="rep_password" required minlength="8">
         </label>
-        <button class="btn_2" id = "btn" type="submit">Register</button>
+<!--            <input type="submit" value="Send form">-->
+        <button class="btn_2" id = "btn" name = "btn" type="submit" onclick="submitForm()">Register</button>
+
+        <p id = "error_message" class="error_message ">Error
+
+        </p>
       </div>
  </form>
 </div>
 
 
-
+<script src="js/register.js"></script>
 </body>
 </html>
