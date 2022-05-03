@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lamg = "en">
+<html lang = "en">
 <head>
   <meta charset="utf-8">
   <title>Note Service</title>
@@ -9,22 +9,24 @@
  <div class="login_top">
   <div class="logo"><b>NoteSE</b></div>
 
-  <a class ="top_home"href="https://nazarhaida.github.io/web/index.html">Home</a>
+  <a class ="top_home" href="index.html">Home</a>
  </div>
- <form class="form">
+ <form class="form" action="/" method="post" id="form">
         <h1 class="login_text"><b>Login</b></h1>
-        <a class="register_link" href="https://nazarhaida.github.io/web/register.html"> <b>Register</b></a>
+        <a class="register_link" href="register.html"> <b>Register</b></a>
         <div class="form_inner">
          <label>
-          <input placeholder="Email" class = "input" type="email" id="email" name="email" Enail>
+          <input placeholder="Email" class = "input" type="email" id="login_email" name="email">
          </label>
          <label>
-          <input placeholder="Password" class="input" type="password" id ="password" >
+          <input placeholder="Password" class="input" type="password" id ="login_password" >
          </label>
-         <button class="btn_2" id = "btn" type="submit">Login</button>
-
+        <button class="btn_2" id = "btn_2" name = "btn_2" type="submit" onclick="submitForm()">Login</button>
         </div>
+        <p id = "error_message_2" class="error_message ">Error
  </form>
 
+
+<script type = "module" src="js/login.js"></script>
 </body>
 </html>
