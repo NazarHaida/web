@@ -1,0 +1,36 @@
+<body>
+ <header class="header_info">
+   <div class ="header_inner">
+     <div class="logo"><b>NoteSE</b></div>
+
+     <div class ="top_links">
+     <a class ="top"  routerLink= "">Notes</a>
+     <a class ="top" *ngIf="!authenticated" routerLink= "login">Login</a>
+     <a class ="top" *ngIf="!authenticated" routerLink= "register">Register</a>
+       <a class = "top" *ngIf="authenticated " routerLink= "" (click)="logout()">Log Out </a>
+       <a class = "top" *ngIf="authenticated " routerLink= "acc" >Accout </a>
+     </div>
+   </div>
+ </header>
+
+ <div class="main">
+   <img class="main_img" src="assets/img/note.png" width="450" height="500"  alt="Note">
+   <div class ="main_intro"><b>Think better.</b></div>
+   <div class ="main_intro"><b> Achieve more.</b></div>
+ </div>
+
+ <div class ="bottom">
+  <div class = "educ_text"> <b>Take better notes</b><img class ="educ_img" src="assets/img/educ.png" width="70" height="70" alt="education">
+  </div>
+  <div class = "improve_text"><b>Improve your grades</b><img class ="improve_img" src="assets/img/improve.png" width="70" height="70" alt="Improvement">
+  </div>
+  <div class = "time_text"> <b>Save time</b><img class ="time_img" src="assets/img/time.png" width="80" height="70" alt="time"></div>
+  <div class = "main_btn">
+    <form class = "btn" action="https://nazarhaida.github.io/web/">
+      <input type="submit" routerLink= "register" value="Try for Free" />
+    </form>
+  </div>
+
+ </div>
+
+</body>
