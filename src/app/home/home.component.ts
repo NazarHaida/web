@@ -28,14 +28,7 @@ export class HomeComponent {
 
   ngOnInit() {
 
-    (auth: boolean) => {
-      this.authenticated = auth;
-    }
-
-
-    this.location.onUrlChange((path) => {
-      this.url = path;
-    })
+    
   }
     logout(): void {
     this.auth.logout().subscribe({
