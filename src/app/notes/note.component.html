@@ -1,0 +1,40 @@
+<form  class="form" [formGroup]="form2" action="/" method="post" id="form">
+<header class="header_info">
+  <div class ="header_inner">
+ <div class="logo"><b>NoteSE</b></div>
+<div class ="top_links">
+  <input type="text" *ngIf="show_find" formControlName="text">
+  <button class="btn_3"(click)="find()" *ngIf="show_find" >Find Note</button>
+   <a class = "top" (click)="find_show()">Find Notes </a>
+  <a  (click)="add_show()" class = "top" #add_note>Add Note</a>
+   <a class = "top" (click)="change_show()">Change Notes </a>
+  <a class = "top" (click)="show()">Show Notes </a>
+
+     <a class ="top" routerLink= "/login">Login</a>
+     <a class ="top"  routerLink= "">Home</a>
+       <a class = "top"  routerLink= "/acc" >Accout </a>
+     </div>
+  </div>
+</header>
+  </form>
+  <div class="notes">
+     <img *ngIf="!show_add && !show_change " class="main_img" src="assets/img/note.png" width="450" height="500"  alt="Note">
+    <form  class="form2" [formGroup]="form" action="/" method="post" id="form2">
+
+    <textarea   *ngIf="show_add || show_change" #text formControlName="text" class = "input" type="text" width="450" height="500"></textarea><br>
+      <input formControlName="id" *ngIf="show_change" type="text" placeholder= "Enter Note Number">
+      <button *ngIf="show_add" class="btn" (click)="add()">Add Note</button>
+      <button *ngIf="show_change" class="btn_2" (click)="change()">Change Note</button>
+      <button *ngIf="show_change" class="btn_2" (click)="delete()">Delete Note</button><br><br><br>
+
+      </form>
+
+    <ul>
+      <li class="note" *ngFor=" let i of response " ><b>{{i}}</b>
+      <input (click)="change_show()" type="button" value="Edit Note"></li>
+</ul>
+
+
+    </div>
+
+

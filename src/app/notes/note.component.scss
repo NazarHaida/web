@@ -1,0 +1,81 @@
+
+$color_1: white;
+$color_2: black;
+$color_3: darkorange;
+$font-family_1: Arial, serif;
+$background-color_1: green;
+$background-color_2: darkgreen;
+$background-color_3: #b3d4fc;
+
+
+.header_inner {
+	justify-content: space-between;
+	display: flex;
+}
+.logo {
+	font-size: 28px;
+}
+.top {
+	color: white;
+	text-decoration: none;
+	transition: color .2s;
+	font-size: 25px;
+	border: 3px white solid;
+	&:hover {
+		color: $color_2;
+	}
+}
+.note{
+  font-size: 20px;
+  border: red solid 3px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  margin-right: 1000px;
+  //margin-left: 500px;
+  white-space: pre-wrap;
+  justify-content: center;
+  background-color: white;
+}
+.main_img {
+	float: right;
+  margin-right: 300px;
+}
+
+.form2{
+  float: right;
+  //padding-right: 300px;
+  //margin-left: 400px;
+  margin-right: 100px;
+  //height: 270px;
+  //width: 400px;
+  //width: 187px;
+  //border: red solid 3px;
+  margin-top: 15px;
+}
+.input{
+  //float: right;
+  //padding-right: 300px;
+  //margin-left: 400px;
+  //margin-right: 100px;
+  height: 270px;
+  width: 400px;
+  //width: 187px;
+  //border: red solid 3px;
+  //margin-top: 15px;
+  //padding-bottom: 500px;
+  //float: right;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALsAAAEOCAMAAADmPpYqAAAAKlBMVEX////+/v7m5ub9/f3p6en5+fnx8fHt7e3z8/P19fXr6+vj4+Pk5OTg4OCeyuiUAAACRUlEQVR4nO3dYY6tIAxA4SIi6szb/3bf1czfSQzGaU483woIeHul0BqlFqiIPk0z0x6SpN/U6F8T1BxRsudvVM0egKSrsHEmYluwoq0bVfayS7qIG94/75GVOvoS/V/2HmLUnD15ki76RMgKBU4VfOL7N/XsoH+GT/1flV6mRPZB6aAzuGcPYlCNtmwrUwPnxdbsX9st2U/tDdlT91rcuT/Hnf3cDiLnxSL27BTRsJ275Ytju5q9ZR7VsqdO0kULNbU0d2yEPGJkwZ43kf9VpXdpW6OKtVMt2ct+Q0XvVyUxcGsm9qjYXGqwE5KSEPq0ZyeJBu1RWnaOaFj2skt6gewE0Q2xzDtUz152SS9Qsf2Wjpo4anLJmjhJfwCcKlh7zy4gGLRGzd79jMtedkkXVWzD1MqtNK8VfadWEgT4Djl15IcF22/JXt4ShTVCObaN2o9jQ4+dzN+qpKeR9x7UCHkyvkt6GPrsIPvkZRz7rEwSAvnuD/nOla/BkvQ7cs0EuVZFkp5GrnnO3vzckL3skl6A3LOI3CtKEgR4u03uOUru9SqJgRshySr6Ww3kb2RIYiDXCGUniMY19p1aSQjcKNnQ1yPJ36imvhH8yL47NegcePbcDaKOmy/7qb0he+pu2bLLB4at0RZqP44zt5T93A6qR5jMHsQg8puYNAD8/9S/qcmlDq6JK8dbcPameVT25Em6qGP7Lc3gnkUFnOUwvksUbd2owHmxxTS2pOdh40wF10yQv2Hq+7uk5/WJenawR8E2XIr/dWe+K4Bt1jsAAAAASUVORK5CYII=");
+}
+.btn{
+
+//  float: right;
+//  margin-top: 150px;
+  margin-left: 170px;
+}
+
+.btn_2{
+  margin-left: 28px;
+}
+
+
